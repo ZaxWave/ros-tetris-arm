@@ -1,0 +1,12 @@
+conda activate yolov8
+yolo task=segment mode=predict model=/home/zhy/rmrobot/tetris/yolov8/best.pt source=/home/zhy/rmrobot/output/color imgsz=1920 save=True save_txt=True save_conf=True project=/home/zhy/桌面/tetris/yolov8/runs name=tetris_pred
+
+python visualize_yolo_degv2.py
+
+
+conda activate yolov8
+  # 先跑 YOLO 检测（跟以前一样）                                                                     
+yolo task=segment mode=predict model=/home/zhy/rmrobot/tetris/yolov8/best.pt source=/home/zhy/rmrobot/output/color imgsz=1920 save=True save_txt=True save_conf=True project=/home/zhy/rmrobot/tetris/yolov8/runs name=tetris_pred
+
+  # 然后一步到位：模板匹配 + 相机坐标                                                                
+python3 /home/zhy/rmrobot/pixel_to_camera.py 

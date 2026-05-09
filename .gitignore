@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Project output (runtime data)
+rmrobot/output/color/
+rmrobot/output/depth/
+rmrobot/output/camerabase/
+rmrobot/output/realfinal/
+rmrobot/output/*.txt
+
+# Claude Code
+.claude/
+
+# Hand-eye calibration images (large binary files)
+rmrobot/handeye/calib_images/
+rmrobot/handeye/calib_*/
+
+# YOLO model weights
+*.pt
+*.npz
+
+# Generated documents
+docs/reports/*.docx
