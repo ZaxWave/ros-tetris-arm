@@ -35,5 +35,8 @@ rmrobot/handeye/calib_*/
 *.pt
 *.npz
 
+# Large media files
+*.mp4
+
 # Generated documents
 docs/reports/*.docx
