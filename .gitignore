@@ -40,3 +40,5 @@ rmrobot/handeye/calib_*/
 
 # Generated documents
 docs/reports/*.docx
+*.aux
+*.log
